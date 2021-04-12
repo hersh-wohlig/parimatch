@@ -1,0 +1,18 @@
+<template>
+<v-container fluid fill-height >
+      <Nuxt />
+</v-container>
+</template>
+
+<style>
+
+html,body{
+  width:100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+
+
+</style>
+
