@@ -80,8 +80,9 @@ export default {}
 
 
 .main{
-background-color: #000;
-  
+/* background-color: #000; */
+   background-image: url(~/assets/images/black-bg.jpg);
+   
 }
 .image-section{
   
@@ -116,11 +117,20 @@ background-color: #000;
    padding: 10px 40px 10px 40px;
    border-radius: 5px;
 }
-@media (max-width:810px) {
+@media (max-width:767px) {
   .date-block{
     width:65%;
   }
+  .image-section{
+    background-size: contain;
+    background-position: top center;
+    padding: 1px
+  }
+  .team-logos{
+    padding-top: 9.5rem !important;
+  }
 }
+   
 .yellow-text{
   margin: 0 auto;
   padding-top:10rem;
@@ -217,7 +227,6 @@ background-color: #000;
   padding-top: 20.6rem;
   width: 75%;
 }
-
 .pb-10{
   padding-bottom: 9rem;
 }
