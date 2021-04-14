@@ -1,49 +1,39 @@
 <template>
 <div >
   <div >
-    <b-row class="main">
+    <b-row class="main d-flex">
 
-      <!--First Column-->
+      <!--First Column  -->
 
-      <b-col class="image-section">
-        <b-row>
-          <b-col>
-            image
-          </b-col>
-          <b-col sm="6" >
-            <div class="yellow-text pb-3">
-            Check your <br> luck and <br> intelligence!
-            </div>
-            <hr class="hr-item">
-           <b-row >
-            <b-col>
-              <div class="features">
-              <p>Customer Support</p>
-              </div>
-            </b-col>
-            <b-col>
-              <div class="features">
-              <p>Big Prize</p>
-              </div>
-            </b-col>
-            <b-col>
-              <div class="features">
-              <p>Quick <br> Withdrawls</p>
-              </div>
-            </b-col>
-          </b-row>
-          </b-col>
-        </b-row>
+      <b-col col="12" class="image-section">
+        <!-- <b-img src="~/assets/images/black-bg.jpg" fluid alt="Responsive image"></b-img> -->
+        <div class="text-center pt-4">
+          <p class="text-center image-text">THE BIG DADDY <br> <span class="text-white span-text">of T20 Cricket is here.</span> <br>
+          BET AND WIN!
+          </p>
+        
+          <p class="text-white date-block mx-auto"> 9th April - 30th May 2021</p> 
+        </div>
+        <div class="d-flex justify-content-center flex-wrap pb-4 px-5">
+         <b-img src="~/assets/images/ipl_logo/MI.png" fluid ></b-img> 
+         <b-img src="~/assets/images/ipl_logo/CSK.png" fluid ></b-img> 
+         <b-img src="~/assets/images/ipl_logo/KKR.png" fluid ></b-img> 
+         <b-img src="~/assets/images/ipl_logo/SRH.png" fluid ></b-img> 
+         <b-img src="~/assets/images/ipl_logo/DC.png" fluid ></b-img> 
+         <b-img src="~/assets/images/ipl_logo/KXIP.png" fluid ></b-img> 
+         <b-img src="~/assets/images/ipl_logo/RR.png" fluid ></b-img> 
+         <b-img src="~/assets/images/ipl_logo/RCB.jpg" fluid ></b-img> 
+        </div>
       </b-col>
       <!-- Second Column-->
-      <b-col sm="5" class="pt-5 sign-up">
+      <b-col sm="5" class="pt-5 sign-up ">
+        
         <div class="mt-2 mb-5">
-        <p>Sign and get up to <br> 
-         <span class="inr">INR</span> <span class="yellow">8000</span> bonus
+        <p>Sign and get up a <span class="inr">100%</span> bonus <br> on first deposit.
         </p>
         </div>
         <div class="form-input mx-auto pt-5">
-         <b-form-input v-model="text" placeholder="Email" class="input "></b-form-input>
+         <b-form-input v-model="text" placeholder="Email" class="input"></b-form-input>
         </div>
         <div>
           <b-form-checkbox id="checkbox-1" v-model="status" name="checkbox-1" value="accepted" 
@@ -53,22 +43,36 @@
            agreement with offer contract for the chosen currency</a>
           </b-form-checkbox>
         </div>
-        <div class="pt-10">
+        <div class="pt-10 pb-10">
           <b-button  class="btn">SIGN UP</b-button>
         </div>
       </b-col>
     </b-row>
-    <b-row class="d-flex footer">
+    <b-row >
       <b-col>
-        Join for free <br> Sign up to play free.
+        <b-row class="d-flex justify-content-center footer ">
+      <b-col  >
+        <div class="foot-icon">
+        <img src="~/assets/images/odds.png" alt="live stream">
+       <span class="foot-text text-white pl-3"> Best odds in the market</span> 
+        </div> 
       </b-col>
       <b-col>
-        Get the bonus <br> Upto INR 8000.
+        <div class="foot-icon">
+        <img src="~/assets/images/bonus.png" alt="live stream">
+        <span class="foot-text text-white pl-3"> Referral bonus </span> 
+        </div>
       </b-col>
       <b-col>
-        Win the prizes  
+        <div class="foot-icon">
+        <img src="~/assets/images/Instant-withdrawals.png" alt="live stream">
+        <span class="foot-text text-white pl-3"> Instant withdrawals </span> 
+        </div> 
       </b-col>
     </b-row>
+      </b-col>
+    </b-row>
+    
   </div>
 </div>
 </template>
@@ -78,14 +82,46 @@ export default {}
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 
 
 .main{
-  height: calc(100vh - 95px);
+  /* height: calc(100vh - 95px); */
+ /* background-image: url(~/assets/images/Akaash_web_pages.jpg); */
+ background-image: url(~/assets/images/black-bg.jpg);
+  
 }
 .image-section{
-  background-color: rgb(0, 90, 78);
+  /* background-color: rgb(90, 0, 0); */
+ /* background-image: url(~/assets/images/black-bg.jpg); */
+  /* padding-bottom: 90px; */
+  padding: 0;
+}
+.image-text{
+  font-family: 'Lato';
+  font-size: 38px;
+  font-weight: 900;
+  color: #f36c21;
+  line-height: 1.4;
+}
+
+.span-text{
+  font-family: 'Lato';
+  font-weight: 300;
+  font-size: 26px;
+}
+.date-block{
+  font-family: 'Lato';
+  font-size: 22px;
+  background-image: linear-gradient(to right, #f3b239 , #f36c21);
+  width:40%;
+   padding: 10px 40px 10px 40px;
+   border-radius: 5px;
+}
+@media (max-width:810px) {
+  .date-block{
+    width:65%;
+  }
 }
 .yellow-text{
   margin: 0 auto;
@@ -120,7 +156,10 @@ export default {}
   text-align: center;
 }
 .sign-up{
-  background-color: rgb(49, 3, 2);
+  /* background-color: #9b4a1d;
+   */
+   background-image: url(~/assets/images/orange-bg.jpg);
+   background-size: cover;
   color: #fff;
   text-align: center;
   font-size:26px;
@@ -145,8 +184,11 @@ export default {}
   background: rgba(255,255,255,.1);
   border:1px solid transparent;
   color: #fff;
-  font-size: 12px;
+  font-size: 14px;
   padding: 25px 24px 25px 24px;
+}
+.input::placeholder{
+  color:#000;
 }
 .checkbox{
   font-size: 12px;
@@ -160,8 +202,8 @@ export default {}
   text-decoration: underline;
 }
 .btn{
-  background-color: yellow;
-  color: #000;
+  background-color: #000;
+  color: #fff;
   font-size: 16px;
   font-weight: 700;
   border: 1px solid transparent;
@@ -170,9 +212,22 @@ export default {}
 .pt-10{
   padding-top: 7rem;
 }
+.pb-10{
+  padding-bottom: 9rem;
+}
 .footer{
-  padding: 10px ;
+  position:absolute;
+  /* top: 75px; */
+      top: -15px;
+  left: 0;
+  right: 0;
+  padding: 20px ;
   text-align: center;
-  background-color: #fff;
+  background-color: #000;
+}
+.foot-text{
+  font-family: 'Lato';
+  font-size:18px;
+  font-weight:400;
 }
 </style>
